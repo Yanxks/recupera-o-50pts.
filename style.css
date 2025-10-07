@@ -1,0 +1,60 @@
+:root{
+  margin:0 0 1rem;
+  color: var(--accent);
+  font-size:1.6rem;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+  margin-bottom:1rem;
+}
+
+label{
+  font-size:0.9rem;
+  text-align:left;
+  color:var(--muted);
+}
+
+input[type="number"]{
+  padding:0.75rem 0.9rem;
+  border-radius:8px;
+  border:1px solid #e6e9ef;
+  font-size:1rem;
+  outline:none;
+}
+
+input[type="number"]:focus{
+  box-shadow:0 0 0 3px rgba(74,144,226,0.12);
+  border-color:var(--accent);
+}
+
+button{
+  padding:0.75rem 1rem;
+  border-radius:10px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+button:active{ transform:translateY(1px); }
+
+#resultado{
+  margin-top:1rem;
+  padding:0.9rem;
+  border-radius:8px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+}
+
+.abaixo { background:#fff4e6; color:#a06400; border:1px solid #ffe7c9; }
+.normal { background:#e9fff2; color:var(--success); border:1px solid #c9f4dd; }
+.sobrepeso { background:#fff6e8; color:var(--warning); border:1px solid #ffeecf; }
+.obesidade { background:#ffecec; color:var(--danger); border:1px solid #ffd5d5; }
+.error { background:#fff0f0; color:#b00020; border:1px solid #ffd6d6; }
